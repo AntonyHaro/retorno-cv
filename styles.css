@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-color: hsl(209, 50%, 5%);
+    --body-bgc: hsl(212, 10%, 98%);
+    --primary-bgc: hsl(212, 10%, 91%);
+    --secondary-bgc: hsl(212, 10%, 95%);
+}
+
+body {
+    background-color: var(--body-bgc);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: grid;
+    padding: 4rem;
+    padding-bottom: 5rem;
+    font-size: 13px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h1 img {
+    height: 30px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: black;
+    margin-bottom: 1.5%;
+}
+
+.info {
+    color: gray;
+}
+
+section {
+    display: grid;
+    gap: 2rem;
+}
+
+.area {
+    display: grid;
+    gap: 1rem;
+}
+
+.area-header {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.field {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #47637a;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}

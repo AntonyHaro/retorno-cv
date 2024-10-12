@@ -1,0 +1,72 @@
+{
+    "otimizacaoCV": {
+        "resumoProfissional": {
+            "atual": "Profissional Sênior com sólida experiência nas áreas de Engenharia de Software, Dados, Desenvolvimento de Sistemas Power BI e Programação, com sólida carreira construída em empresas nacionais e multinacionais.",
+            "sugestao": "Consultor Sênior em Desenvolvimento de Sistemas e Análise de Dados com mais de 25 anos de experiência em Engenharia de Software, Power BI e Programação. Especializado em .NET, JavaScript, React JS e bancos de dados como Oracle e SqlServer. Histórico comprovado em empresas nacionais e multinacionais, liderando projetos de grande porte e otimizando processos de TI."
+        },
+        "experienciaProfissional": {
+            "destaque": "Incluir mais realizações quantificáveis, por exemplo:",
+            "exemplos": [
+                "Responsável pela sustentação e desenvolvimento de sistemas utilizados por mais de 500 colaboradores, aumentando a eficiência operacional em 20%.",
+                "Migração de relatórios para Power BI, resultando em uma redução de 30% no tempo de geração de relatórios."
+            ]
+        },
+        "habilidades": {
+            "tecnicas": [
+                "Linguagens de Programação: C#, JavaScript, Python, etc.",
+                "Ferramentas de BI: Power BI, Crystal Reports, Active Reports",
+                "Bancos de Dados: Oracle, SqlServer, MongoDB, Cassandra",
+                "Ferramentas de ETL: SSIS, IBM DataStage, Databricks",
+                "Metodologias: Scrum, Gestão de Projetos"
+            ],
+            "interpessoais": [
+                "Liderança e Desenvolvimento de Equipes",
+                "Comunicação Efetiva",
+                "Resolução de Problemas",
+                "Gestão de Projetos"
+            ]
+        },
+        "projetosRelevantes": [
+            "SISCOM – Sistema de Cobrança Modular: Implementação da localização de clientes, melhorando a precisão das cobranças em 15%.",
+            "Projeto Forecast para TCS: Desenvolvimento de ferramentas para previsão de receitas e custos, aumentando a precisão das projeções financeiras em 25%."
+        ]
+    },
+    "gaps": [
+        {
+            "area": "Certificações",
+            "descricao": "Falta de certificações técnicas ou de gestão relevantes mencionadas no currículo."
+        },
+        {
+            "area": "Cloud Computing",
+            "descricao": "Ausência de experiência explícita com plataformas de nuvem como AWS, Azure ou Google Cloud."
+        },
+        {
+            "area": "DevOps e CI/CD",
+            "descricao": "Falta de menção clara de experiência com práticas e ferramentas de DevOps."
+        },
+        {
+            "area": "Machine Learning e IA",
+            "descricao": "Ausência de menção específica de projetos ou habilidades em ML/IA."
+        },
+        {
+            "area": "Segurança da Informação",
+            "descricao": "Falta de destaque para experiências ou conhecimentos em segurança cibernética."
+        },
+        {
+            "area": "Metodologias Ágeis",
+            "descricao": "Falta de detalhes sobre outras metodologias ágeis além do Scrum ou certificações relacionadas."
+        }
+    ],
+    "recomendacoes": [
+        "Obter certificações relevantes em cloud computing, gerenciamento de projetos e metodologias ágeis.",
+        "Aprofundar conhecimentos em pelo menos uma das principais plataformas de nuvem (AWS, Azure, GCP).",
+        "Adquirir experiência com ferramentas de DevOps e CI/CD.",
+        "Realizar cursos ou projetos em machine learning e IA.",
+        "Buscar conhecimentos em práticas de segurança cibernética.",
+        "Aprofundar e destacar experiências com metodologias ágeis além do Scrum.",
+        "Manter-se atualizado com as últimas versões das tecnologias já dominadas.",
+        "Enfatizar habilidades de liderança e comunicação no currículo.",
+        "Adicionar mais métricas e resultados quantificáveis aos projetos listados.",
+        "Criar um portfólio online ou perfil GitHub para mostrar projetos pessoais."
+    ]
+}
