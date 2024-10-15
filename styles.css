@@ -100,11 +100,6 @@ section {
     border-left: 0.2rem solid var(--secondary-bgc);
 }
 
-#gaps {
-    display: grid;
-    gap: 2rem;
-}
-
 #gaps .areas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -112,18 +107,17 @@ section {
 }
 
 #gaps .area-header {
-    color: hsl(5, 80%, 35%);
+    color: hsl(5, 49%, 42%);
 }
 
 #gaps .area {
     padding: 1rem;
     border-radius: 5px;
-    border: 1px dashed hsl(5, 36%, 80%);
+    border: 1px dashed lightgray;
 }
 
 #recomendacoes ul {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     gap: 0.7rem;
 }
 
