@@ -10,9 +10,9 @@
 
 :root {
     --text-color: hsl(209, 50%, 5%);
-    --body-bgc: hsl(212, 10%, 98%);
-    --primary-bgc: hsl(212, 10%, 91%);
-    --secondary-bgc: hsl(212, 10%, 95%);
+    --body-bgc: hsl(212, 10%, 99%);
+    --primary-bgc: hsl(212, 0%, 89%);
+    --secondary-bgc: hsl(212, 0%, 80%);
 }
 
 body {
@@ -20,6 +20,7 @@ body {
     color: var(--text-color);
     min-height: 100vh;
     display: grid;
+    gap: 3rem;
     padding: 4rem;
     padding-bottom: 5rem;
     font-size: 13px;
@@ -47,9 +48,26 @@ h1 {
     color: gray;
 }
 
+.cv-results {
+    display: grid;
+    gap: 3.5rem;
+}
+
 section {
     display: grid;
     gap: 2rem;
+}
+
+#otimizacao {
+    display: grid;
+    gap: 1rem;
+}
+
+#otimizacao .area {
+    background-color: var(--primary-bgc);
+    padding: 1.2rem;
+    border-radius: 0 5px 5px 0;
+    border-left: 0.5rem solid var(--secondary-bgc);
 }
 
 .area {
@@ -58,7 +76,7 @@ section {
 }
 
 .area-header {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -69,8 +87,37 @@ section {
 
 .label {
     font-weight: bold;
-    font-size: 1.1em;
-    color: #47637a;
+    font-size: 1em;
+    color: #5c5c5c;
+}
+
+#gaps {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 2rem;
+}
+
+#gaps .areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#gaps .area-header {
+    color: hsl(5, 80%, 35%);
+}
+
+#recomendacoes ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem;
+}
+
+#recomendacoes ul li {
+    border: 1px solid #bbbbbb;
+    list-style: none;
+    padding: 0.7rem;
+    border-radius: 3px;
 }
 
 @media (max-width: 768px) {
