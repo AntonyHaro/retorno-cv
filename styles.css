@@ -12,7 +12,8 @@
     --text-color: hsl(210, 58%, 5%);
     --body-bgc: hsl(212, 10%, 99%);
     --border: hsl(0, 0%, 71%);
-    --label-color: #5c5c5c;
+    --area-header: hsl(212, 10%, 30%);
+    --label-color: hsl(212, 10%, 50%);
     --gaps-color: hsl(0, 48%, 60%);
     --highlight-color: hsl(212, 53%, 31%);
 }
@@ -21,11 +22,17 @@ body {
     background-color: var(--body-bgc);
     color: var(--text-color);
     min-height: 100vh;
-    display: grid;
-    gap: 3rem;
-    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
     padding-bottom: 5rem;
     font-size: 13px;
+}
+
+.container {
+    width: 75vw;
+    display: grid;
+    gap: 3rem;
 }
 
 header {
@@ -34,20 +41,21 @@ header {
     gap: 1rem;
 }
 
-h1 img {
-    height: 30px;
-}
-
 h1 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: black;
+}
+
+h1 span {
+    color: var(--highlight-color);
 }
 
 hr {
     width: 80%;
-    border: 1px dashed lightgray;
+    height: 2px;
+    background-color: lightgray;
+    border: 0;
 }
 
 main {
@@ -76,7 +84,7 @@ section {
 }
 
 .area-header {
-    color: var(--highlight-color);
+    color: var(--area-header);
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -137,17 +145,15 @@ li::marker {
     color: var(--highlight-color);
 }
 
-/* Estilos para dispositivos móveis */
+/* mobile */
 @media (max-width: 425px) {
     body {
         font-size: 11px;
     }
-    /* Estilos específicos para celulares grandes */
 }
 
-/* Estilos para tablets */
+/* tablets and small devices */
 @media (max-width: 768px) {
-    /* Estilos específicos para tablets */
     #gaps .areas {
         grid-template-columns: 1fr;
     }
@@ -155,14 +161,4 @@ li::marker {
     #gaps .area {
         padding: 0.5;
     }
-}
-
-/* Estilos para laptops */
-@media (max-width: 1200px) {
-    /* Estilos específicos para laptops */
-}
-
-/* Estilos para desktops */
-@media (min-width: 1201px) {
-    /* Estilos para desktops */
 }
