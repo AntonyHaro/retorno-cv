@@ -9,10 +9,12 @@
 }
 
 :root {
-    --text-color: hsl(209, 50%, 5%);
+    --text-color: hsl(210, 58%, 5%);
     --body-bgc: hsl(212, 10%, 99%);
-    --primary-bgc: hsl(212, 0%, 89%);
-    --secondary-bgc: hsl(212, 0%, 80%);
+    --border: hsl(0, 0%, 71%);
+    --label-color: #5c5c5c;
+    --gaps-color: hsl(0, 48%, 60%);
+    --highlight-color: hsl(212, 53%, 31%);
 }
 
 body {
@@ -74,6 +76,7 @@ section {
 }
 
 .area-header {
+    color: var(--highlight-color);
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -86,7 +89,7 @@ section {
 .label {
     font-weight: bold;
     font-size: 1em;
-    color: #5c5c5c;
+    color: var(--label-color);
 }
 
 #otimizacao .otimizacoes {
@@ -97,7 +100,7 @@ section {
 #otimizacao .area {
     padding: 1.2rem;
     border-radius: 0 5px 5px 0;
-    border-left: 0.2rem solid var(--secondary-bgc);
+    border-left: 0.2rem solid var(--border);
 }
 
 #gaps .areas {
@@ -107,13 +110,14 @@ section {
 }
 
 #gaps .area-header {
-    color: hsl(5, 49%, 42%);
+    color: var(--gaps-color);
 }
 
 #gaps .area {
-    padding: 1rem;
+    gap: 0.7em;
+    padding: 1.2rem;
     border-radius: 5px;
-    border: 1px dashed lightgray;
+    border: 1px dashed var(--border);
 }
 
 #recomendacoes ul {
@@ -124,23 +128,41 @@ section {
 #recomendacoes ul li {
     width: fit-content;
     list-style: decimal inside;
-    border-left: 0.3rem solid #bbbbbb;
+    border-left: 0.2rem solid var(--border);
     padding: 0.7rem;
 }
 
 li::marker {
     font-weight: bold;
-    color: rgb(34, 84, 150);
+    color: var(--highlight-color);
 }
 
+/* Estilos para dispositivos móveis */
+@media (max-width: 425px) {
+    body {
+        font-size: 11px;
+    }
+    /* Estilos específicos para celulares grandes */
+}
+
+/* Estilos para tablets */
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
+    /* Estilos específicos para tablets */
+    #gaps .areas {
+        grid-template-columns: 1fr;
+    }
+
+    #gaps .area {
+        padding: 0.5;
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
+/* Estilos para laptops */
+@media (max-width: 1200px) {
+    /* Estilos específicos para laptops */
+}
+
+/* Estilos para desktops */
+@media (min-width: 1201px) {
+    /* Estilos para desktops */
 }
