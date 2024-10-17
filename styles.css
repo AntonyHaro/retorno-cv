@@ -78,9 +78,17 @@ section {
     gap: 2rem;
 }
 
+h2 {
+    color: var(--highlight-color);
+}
+
 .area {
     display: grid;
     gap: 1rem;
+    transition: 0.2s;
+}
+
+.area:hover {
 }
 
 .area-header {
@@ -111,6 +119,11 @@ section {
     border-left: 0.2rem solid var(--border);
 }
 
+#otimizacao .area:hover {
+    transform: translateX(0.2rem);
+    border-color: var(--highlight-color);
+}
+
 #gaps .areas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -128,6 +141,11 @@ section {
     border: 1px dashed var(--border);
 }
 
+#gaps .area:hover {
+    transform: translateY(-0.2rem);
+    border-color: var(--gaps-color);
+}
+
 #recomendacoes ul {
     display: grid;
     gap: 0.7rem;
@@ -138,11 +156,17 @@ section {
     list-style: decimal inside;
     border-left: 0.2rem solid var(--border);
     padding: 0.7rem;
+    transition: 0.2s;
 }
 
 li::marker {
     font-weight: bold;
     color: var(--highlight-color);
+}
+
+#recomendacoes ul li:hover {
+    transform: translateX(0.2rem);
+    border-color: var(--label-color);
 }
 
 /* mobile */
