@@ -27,6 +27,7 @@ body {
     padding: 5rem;
     padding-bottom: 5rem;
     font-size: 13px;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -58,6 +59,31 @@ hr {
     border: 0;
 }
 
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav li {
+    list-style: none;
+    position: relative;
+    padding-left: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+nav li::before {
+    content: "-";
+    color: var(--label-color);
+    position: absolute;
+    left: 0;
+}
+
+nav a {
+    color: var(--label-color);
+    text-decoration: none;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -86,9 +112,6 @@ h2 {
     display: grid;
     gap: 1rem;
     transition: 0.2s;
-}
-
-.area:hover {
 }
 
 .area-header {
@@ -151,7 +174,7 @@ h2 {
     gap: 0.7rem;
 }
 
-#recomendacoes ul li {
+#recomendacoes li {
     width: fit-content;
     list-style: decimal inside;
     border-left: 0.2rem solid var(--border);
@@ -159,12 +182,12 @@ h2 {
     transition: 0.2s;
 }
 
-li::marker {
+#recomendacoes li::marker {
     font-weight: bold;
     color: var(--highlight-color);
 }
 
-#recomendacoes ul li:hover {
+#recomendacoes li:hover {
     transform: translateX(0.2rem);
     border-color: var(--label-color);
 }
