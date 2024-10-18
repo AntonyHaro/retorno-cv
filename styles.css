@@ -193,16 +193,31 @@ h2 {
 }
 
 /* mobile */
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     body {
         font-size: 11px;
     }
-}
 
-/* tablets and small devices */
-@media (max-width: 768px) {
     #gaps .areas {
         grid-template-columns: 1fr;
+    }
+}
+
+/* medium */
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        width: 100%;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        flex-direction: column;
     }
 
     #gaps .area {
